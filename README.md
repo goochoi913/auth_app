@@ -1,17 +1,14 @@
-# auth_app
+# Flutter Firebase Authentication App
 
-A new Flutter project.
+A production-style Flutter application demonstrating a complete, secure authentication flow using Firebase Authentication.
 
-## Getting Started
+## Features
+* **Secure Registration & Login:** Email and password authentication with validation.
+* **Reactive Routing:** Utilizes `StreamBuilder` and `FirebaseAuth.instance.authStateChanges()` to automatically route users to the Profile screen upon login, completely eliminating manual `Navigator.push` state bugs.
+* **Profile Management:** Displays the current user's email and provides a secure form to update the account password.
+* **Clean Architecture:** Separates Firebase API logic into a dedicated `AuthService` class, keeping the UI widgets focused solely on presentation and validation.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack
+* Flutter
+* Firebase Authentication (Email/Password Provider)
+* Firebase Core
